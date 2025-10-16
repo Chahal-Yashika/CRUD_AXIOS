@@ -1,16 +1,66 @@
-# React + Vite
+# CRUD Operations with Axios
+This project demonstrates the implementation of CRUD (Create, Read, Update, Delete) operations using React.js and Axios.
+It’s a simple yet effective example to understand how to connect a React frontend with an API, manage state and handle data dynamically.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+### Features
+- Create new records using POST request.
+- Fetch and display data dynamically using GET request.
+- Update existing records using PUT request.
+- Delete records using DELETE request.
+- Fully responsive and interactive UI.
+- Clean and reusable React components.
 
-Currently, two official plugins are available:
+### Tech Stack
+- React.js (Frontend Library)
+- Axios (HTTP Client for API Calls)
+- JavaScript (ES6+)
+- HTML5 & CSS3
+- Vite (for fast build and development)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Installation & Setup
+Follow these steps to run the project locally:
 
-## React Compiler
+Clone the repository
+git clone: https://github.com/Chahal-Yashika/CRUD_AXIOS
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Navigate into the project folder:
+cd axios_project
 
-## Expanding the ESLint configuration
+Install dependencies:
+npm install
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Start the development server:
+npm run dev
+
+The application will run at: http://localhost:5173
+
+### API Integration (Axios)
+The project uses Axios for all CRUD operations:
+
+import axios from "axios";
+
+export const getPost = () => axios.get("https://jsonplaceholder.typicode.com/posts");
+
+Each operation (GET, POST, PUT, DELETE) is managed through clean, separate functions inside the Postapi.js file.
+
+### Preview
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/416fe96e-4ae5-4a0d-b991-a2ffe36aea46" width="800" alt="CRUD Project Preview" />
+</p>
+
+### Deployment
+The live version of the project is available at:https://axiospro.netlify.app/
+
+### Learnings
+Through this project, I learned:
+- How to integrate Axios with React components.
+- Managing data flow between frontend and API.
+- Handling state updates efficiently.
+- Structuring a React app with clean reusable components.
+
+
+
+
+
+
+
