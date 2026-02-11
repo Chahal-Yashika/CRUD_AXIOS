@@ -1,4 +1,4 @@
-# Notes Manager
+# NoteVault 
 This project demonstrates the implementation of CRUD (Create, Read, Update, Delete) operations using React.js and Axios.
 It’s a simple yet effective example to understand how to connect a React frontend with an API, manage state and handle data dynamically.
 
